@@ -8,11 +8,13 @@ Scenario('Check Emeryville and Palo Alto', async (I) => {
   I.click('Change store');
   I.click(locate('.range-revamp-change-store__store--upper').at(6).as('Emeryville store'));
   I.click('Select this store');
+  I.waitForText('Sorry, this product is out of stock');
   let message = await I.grabTextFrom(locate('.range-revamp-store-info__section-text').as('Status'));
   I.say(message);
   I.click('Change store');
   I.click(locate('.range-revamp-change-store__store--upper').at(7).as('Palo Alto store'));
   I.click('Select this store');
+  I.waitForText('Sorry, this product is out of stock');
   message = await I.grabTextFrom(locate('.range-revamp-store-info__section-text').as('Status'));
   I.say(message);
 });
