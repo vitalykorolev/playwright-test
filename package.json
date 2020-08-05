@@ -1,0 +1,13 @@
+{
+  "name": "e2e-ui-tests",
+  "private": true,
+  "dependencies": {
+    "@wdio/cli": "6.3.6",
+    "@wdio/selenium-standalone-service": "6.1.14",
+    "codeceptjs": "2.6.6",
+    "mocha": "8.1.0",
+    "playwright": "^1.2.1",
+    "selenium-standalone": "6.18.0",
+    "webdriverio": "6.3.6"
+  }
+}
